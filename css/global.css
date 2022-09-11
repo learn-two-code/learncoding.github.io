@@ -1,26 +1,19 @@
-/* Common styles */
+/* global override */
 
-html {
-    font-family: D-DIN, sans-serif;
-    background-color: #121212;
-    color: white;
-}
-
-a {
-    color: #2A456E;
-}
-
-body {
+* {
     margin: 0;
-    position: relative;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: rgb(251, 242, 222);
+    font-size: 12px;
 }
+
+/* common styles */
 
 .main-container {
     min-height: 100vh;
-    overflow: hidden;
-    display: block;
-    position: relative;
-    padding-bottom: 5.14vw;
+    overflow-wrap: break-word;
+    overflow: auto;
 }
 
 ::-webkit-scrollbar {
@@ -38,10 +31,4 @@ body {
 }
 ::-webkit-scrollbar-corner {
     background-color: #181a1b;
-}
-
-@media only screen and (max-width: 1000px) {
-    .main-container {
-        padding-bottom: 40px;
-    }
 }
